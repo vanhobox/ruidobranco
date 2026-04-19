@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="coral_red">#EF476F</color>
+    <color name="deep_navy">#0D1B2A</color>
+    <color name="midnight_blue">#1B263B</color>
+    <color name="slate_blue">#415A77</color>
+    <color name="soft_lavender">#E0E1DD</color>
+    <color name="soft_white">#F8F9FA</color>
+    <color name="warm_gold">#FFD166</color>
+    <string name="app_name">ThaLemes</string>
+    <string name="notification_channel_description">Shows when white noise is playing</string>
+    <string name="notification_channel_name">Baby Sounds</string>
+    <string name="now_playing">Now playing: %s</string>
+    <string name="sound_fan">Fan</string>
+    <string name="sound_humidifier">Humidifier</string>
+    <string name="sound_ocean">Ocean</string>
+    <string name="sound_radio_static">Radio Static</string>
+    <string name="sound_rain">Rain</string>
+    <string name="sound_uterine">Uterine</string>
+    <string name="sound_waterfall">Waterfall</string>
+    <string name="sound_white_noise">White Noise</string>
+    <string name="stop">STOP</string>
+    <string name="stop_sound">Stop Sound</string>
+    <style name="Theme.ThaLemesRuidoBranco" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">@color/deep_navy</item>
+        <item name="android:navigationBarColor">@color/deep_navy</item>
+        <item name="android:windowBackground">@color/deep_navy</item>
+    </style>
+</resources>

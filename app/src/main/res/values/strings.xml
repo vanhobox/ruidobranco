@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ThaLemes</string>
+    <string name="stop">STOP</string>
+    <string name="notification_channel_name">Baby Sounds</string>
+    <string name="notification_channel_description">Shows when white noise is playing</string>
+    <string name="now_playing">Now playing: %s</string>
+    <string name="stop_sound">Stop Sound</string>
+</resources>

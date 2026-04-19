@@ -1,0 +1,102 @@
+[
+    {
+        "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/drawable_ic_rain.xml.flat",
+        "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/drawable/ic_rain.xml"
+    },
+    {
+        "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/drawable_ic_white_noise.xml.flat",
+        "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/drawable/ic_white_noise.xml"
+    },
+    {
+        "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/raw_rain.wav.flat",
+        "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/raw/rain.wav"
+    },
+    {
+        "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/raw_humidifier.wav.flat",
+        "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/raw/humidifier.wav"
+    },
+    {
+        "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/drawable_ic_radio_static.xml.flat",
+        "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/drawable/ic_radio_static.xml"
+    },
+    {
+        "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/raw_fan.wav.flat",
+        "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/raw/fan.wav"
+    },
+    {
+        "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/raw_uterine.wav.flat",
+        "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/raw/uterine.wav"
+    },
+    {
+        "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/raw_waterfall.wav.flat",
+        "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/raw/waterfall.wav"
+    },
+    {
+        "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/drawable_ic_humidifier.xml.flat",
+        "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/drawable/ic_humidifier.xml"
+    },
+    {
+        "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/drawable_ic_fan.xml.flat",
+        "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/drawable/ic_fan.xml"
+    },
+    {
+        "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/drawable_ic_ocean.xml.flat",
+        "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/drawable/ic_ocean.xml"
+    },
+    {
+        "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/drawable_ic_waterfall.xml.flat",
+        "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/drawable/ic_waterfall.xml"
+    },
+    {
+        "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/raw_white_noise.wav.flat",
+        "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/raw/white_noise.wav"
+    },
+    {
+        "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/drawable_ic_uterine.xml.flat",
+        "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/drawable/ic_uterine.xml"
+    },
+    {
+        "merged": "com.babydream.whitenoise.app-merged_res-46:/raw_rain.wav.flat",
+        "source": "com.babydream.whitenoise.app-main-48:/raw/rain.wav"
+    },
+    {
+        "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/raw_ocean.wav.flat",
+        "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/raw/ocean.wav"
+    },
+    {
+        "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/drawable_ic_moon_star.xml.flat",
+        "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/drawable/ic_moon_star.xml"
+    },
+    {
+        "merged": "com.babydream.whitenoise.app-merged_res-46:/raw_ocean.wav.flat",
+        "source": "com.babydream.whitenoise.app-main-48:/raw/ocean.wav"
+    },
+    {
+        "merged": "com.babydream.whitenoise.app-merged_res-46:/raw_uterine.wav.flat",
+        "source": "com.babydream.whitenoise.app-main-48:/raw/uterine.wav"
+    },
+    {
+        "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/raw_radio_static.wav.flat",
+        "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/raw/radio_static.wav"
+    },
+    {
+        "merged": "com.babydream.whitenoise.app-merged_res-46:/raw_humidifier.wav.flat",
+        "source": "com.babydream.whitenoise.app-main-48:/raw/humidifier.wav"
+    }
+]

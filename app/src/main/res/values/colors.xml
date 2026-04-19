@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="deep_navy">#0D1B2A</color>
+    <color name="midnight_blue">#1B263B</color>
+    <color name="slate_blue">#415A77</color>
+    <color name="soft_lavender">#E0E1DD</color>
+    <color name="warm_gold">#FFD166</color>
+    <color name="coral_red">#EF476F</color>
+    <color name="soft_white">#F8F9FA</color>
+</resources>

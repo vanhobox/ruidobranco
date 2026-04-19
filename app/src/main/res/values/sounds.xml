@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sound_uterine">Uterine</string>
+    <string name="sound_rain">Rain</string>
+    <string name="sound_ocean">Ocean</string>
+    <string name="sound_waterfall">Waterfall</string>
+    <string name="sound_fan">Fan</string>
+    <string name="sound_humidifier">Humidifier</string>
+    <string name="sound_radio_static">Radio Static</string>
+    <string name="sound_white_noise">White Noise</string>
+</resources>
