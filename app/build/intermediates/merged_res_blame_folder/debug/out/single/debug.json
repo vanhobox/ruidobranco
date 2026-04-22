@@ -12,6 +12,10 @@
         "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/drawable/ic_white_noise.xml"
     },
     {
+        "merged": "com.babydream.whitenoise.app-merged_res-46:/raw_white_noise.wav.flat",
+        "source": "com.babydream.whitenoise.app-main-48:/raw/white_noise.wav"
+    },
+    {
         "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/raw_rain.wav.flat",
         "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/raw/rain.wav"
     },
@@ -48,6 +52,10 @@
         "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/drawable/ic_fan.xml"
     },
     {
+        "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/raw_fun.wav.flat",
+        "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/raw/fun.wav"
+    },
+    {
         "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
@@ -76,6 +84,14 @@
         "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/raw/ocean.wav"
     },
     {
+        "merged": "com.babydream.whitenoise.app-merged_res-46:/raw_waterfall.wav.flat",
+        "source": "com.babydream.whitenoise.app-main-48:/raw/waterfall.wav"
+    },
+    {
+        "merged": "com.babydream.whitenoise.app-merged_res-46:/raw_fan.wav.flat",
+        "source": "com.babydream.whitenoise.app-main-48:/raw/fan.wav"
+    },
+    {
         "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/drawable_ic_moon_star.xml.flat",
         "source": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-main-48:/drawable/ic_moon_star.xml"
     },
@@ -86,6 +102,10 @@
     {
         "merged": "com.babydream.whitenoise.app-merged_res-46:/raw_uterine.wav.flat",
         "source": "com.babydream.whitenoise.app-main-48:/raw/uterine.wav"
+    },
+    {
+        "merged": "com.babydream.whitenoise.app-merged_res-46:/raw_radio_static.wav.flat",
+        "source": "com.babydream.whitenoise.app-main-48:/raw/radio_static.wav"
     },
     {
         "merged": "/home/osboxes/.gradle/daemon/8.5/com.babydream.whitenoise.app-merged_res-46:/drawable_ic_launcher_background.xml.flat",
