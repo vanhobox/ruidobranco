@@ -19,9 +19,12 @@ import androidx.core.app.NotificationManagerCompat
 class AudioPlaybackService : Service() {
 
     private val binder = AudioBinder()
-    private var mediaPlayer: MediaPlayer? = null
+    // Two players are kept alive and chained so the transition is seamless (gapless looping).
+    private var playerA: MediaPlayer? = null
+    private var playerB: MediaPlayer? = null
     private var wakeLock: PowerManager.WakeLock? = null
     private var currentSoundId: Int? = null
+    private var currentRawRes: Int? = null
     private var mediaSession: MediaSessionCompat? = null
 
     companion object {
@@ -71,38 +74,81 @@ class AudioPlaybackService : Service() {
         notificationManager.createNotificationChannel(channel)
     }
 
+    /**
+     * Creates a fresh, ready-to-use MediaPlayer for [rawRes].
+     * Returns null if creation fails.
+     */
+    private fun buildPlayer(rawRes: Int): MediaPlayer? =
+        MediaPlayer.create(this, rawRes)?.also { mp ->
+            mp.setOnErrorListener { p, _, _ ->
+                p.release()
+                true
+            }
+        }
+
     fun playSound(soundItem: SoundItem, soundName: String) {
         stopPlayback()
 
-        val player = MediaPlayer.create(this, soundItem.rawRes)
-        if (player == null) {
-            return
-        }
+        val rawRes = soundItem.rawRes
+        currentRawRes = rawRes
 
-        player.setOnErrorListener { mp, _, _ ->
-            mp.release()
-            true
-        }
+        // Player A starts immediately; Player B is pre-loaded and set as next.
+        val pA = buildPlayer(rawRes) ?: return
+        val pB = buildPlayer(rawRes) ?: run { pA.release(); return }
 
-        mediaPlayer = player.apply {
-            isLooping = true
-            start()
-        }
+        // When A finishes it seamlessly hands off to B, then B loads a fresh A, and so on.
+        chainPlayers(pA, pB)
+
+        playerA = pA
+        playerB = pB
+
+        pA.start()
 
         currentSoundId = soundItem.id
         acquireWakeLock()
         startForeground(NOTIFICATION_ID, createNotification(soundName))
     }
 
+    /**
+     * Sets up the gapless chain: when [current] completes it hands off to [next],
+     * then [next] prepares a new player and chains itself again.
+     */
+    private fun chainPlayers(current: MediaPlayer, next: MediaPlayer) {
+        current.setNextMediaPlayer(next)
+        current.setOnCompletionListener { finished ->
+            // Release the just-finished player and build a replacement for next's handoff.
+            finished.setOnCompletionListener(null)
+            finished.release()
+
+            val rawRes = currentRawRes ?: return@setOnCompletionListener
+            val replacement = buildPlayer(rawRes) ?: return@setOnCompletionListener
+
+            // Chain next -> replacement so the loop continues forever.
+            chainPlayers(next, replacement)
+
+            // Update our references so stopPlayback() can still clean up correctly.
+            playerA = next
+            playerB = replacement
+        }
+    }
+
     fun stopPlayback() {
-        mediaPlayer?.apply {
-            if (isPlaying) {
-                stop()
-            }
+        playerA?.apply {
+            setOnCompletionListener(null)
+            if (isPlaying) stop()
             release()
         }
-        mediaPlayer = null
+        playerA = null
+
+        playerB?.apply {
+            setOnCompletionListener(null)
+            if (isPlaying) stop()
+            release()
+        }
+        playerB = null
+
         currentSoundId = null
+        currentRawRes = null
         releaseWakeLock()
         stopForeground(STOP_FOREGROUND_REMOVE)
     }
